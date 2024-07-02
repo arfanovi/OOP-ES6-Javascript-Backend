@@ -24,5 +24,33 @@ class myClass{
 
 let obj  = new myClass();
 obj.myClass1()
-
 obj.myClass2()
+
+
+
+
+
+// Class Parameter Passing
+
+class myName{
+    myClass1(name){
+        console.log(name)
+    }
+    myClass2(name) {
+        console.log(name)
+    }
+    myClass3(name) {
+        console.log(name)
+    }
+    myClass4() {
+        console.log(name)
+    }
+}
+
+let names  = new myName();
+names.myClass1('Arfan')
+names.myClass2('Hosen')
+names.myClass3('Ovi')
+
+
+
