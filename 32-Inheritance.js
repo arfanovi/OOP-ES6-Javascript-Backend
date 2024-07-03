@@ -36,5 +36,22 @@ class Animal {
 const animal = new Animal('Generic Animal',30);
 animal.speak();
 
-const person = new Animal('Ovi', 23);
-person.speak()
+
+
+
+// Defien Subclass
+
+class Dogs extends Animal {
+    constructor (name,age, breed){
+        super(name,age); // Call the parent class constructor
+        this.breed = breed;
+
+    }
+    speak(){
+        console.log(`${this.name}, age ${this.age} the ${this.breed}, barks`)
+    }
+}
+
+
+const myDog = new Dogs('Max', 20, 'Golden Retriever');
+myDog.speak()
