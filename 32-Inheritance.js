@@ -55,3 +55,16 @@ class Dogs extends Animal {
 
 const myDog = new Dogs('Max', 20, 'Golden Retriever');
 myDog.speak()
+
+
+// Override Methods 
+// In this sub class can override methods from the parent class to specific functionality
+
+class Cat extends Animal {
+    speak(){
+        console.log(`${this.name} , age${this.age} meows.`)
+    }
+}
+
+const myCat = new Cat('Whiskers', 20);
+myCat.speak()
