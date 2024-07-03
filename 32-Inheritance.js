@@ -68,3 +68,25 @@ class Cat extends Animal {
 
 const myCat = new Cat('Whiskers', 20);
 myCat.speak()
+
+
+// Add New Methods and Properties 
+
+class Bird extends Animal {
+    constructor(name, canFly){
+        super(name);
+        this.canFly = canFly;
+    }
+
+    fly(){
+        if (this.canFly){
+            console.log(`${this.name} is flying.`);
+        } else {
+            console.log(`${this.name} , can't fly.`)
+        }
+    }
+}
+
+const myBird = new Bird('Robin', true);
+// myBird.speak();
+myBird.fly()
