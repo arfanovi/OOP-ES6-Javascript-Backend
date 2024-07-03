@@ -90,3 +90,30 @@ class Bird extends Animal {
 const myBird = new Bird('Robin', true);
 // myBird.speak();
 myBird.fly()
+
+
+
+// Multi-Level inheritance
+
+class Mammal extends Animal {
+    constructor(name, hasFur){
+        super(name);
+        this.hasFur = hasFur;
+    }
+}
+
+
+class Dog extends Mammal {
+    constructor(name, breed) {
+        super(name, true);
+        this.breed = breed;
+    }
+    speak() {
+        console.log(`${this.name}, the ${this.breed}, barks`);
+    }
+}
+
+const myDogs = Dogs('Beagle', 21);
+myBird.speak();
+console.log(myDogs.hasFur);
+
