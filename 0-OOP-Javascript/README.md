@@ -55,7 +55,15 @@ Four Principals of OOP
 
 3. Inheritance  => child class will take matching properties and values from parent class.
 
-4. Polymorphism => Polymorphism
+4. Polymorphism => Polymorphism this will behave many ways. a child class can override a method that inherited from parent class.
+
+
+
+*********************************
+There are three way to make object in OOP
+1. Function Constructor
+2. Classes
+3. Object.create()
 
 
 
